@@ -18,16 +18,16 @@ List any existing issues this pull request resolves.
 
 Put an `x` into the box(es) that apply:
 
-#### General
+### General
 
 - [ ] Describe what changes are being made
 - [ ] Explain why and how the changes were necessary and implemented respectively
 - [ ] Reference issue with `#<ISSUE_NO>` if applicable
 
-#### Resources
+### Resources
 
 - [ ] If you have changed any SCSS code, run `make release` to regenerate all CSS files
 
-#### Contributors
+### Contributors
 
 - [ ] Add yourself to `CONTRIBUTORS.md` if you aren't on it already

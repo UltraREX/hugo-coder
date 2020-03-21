@@ -9,6 +9,12 @@
     {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
     {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
 
+    <!-- Open Graph -->
+    {{- if .Site.Params.album -}}
+        <meta property="og:image" content="{{ .Site.Params.album }}" />
+    {{ end }}
+    <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+
     {{ template "_internal/twitter_cards.html" . }}
     {{ template "_internal/opengraph.html" . }}
 

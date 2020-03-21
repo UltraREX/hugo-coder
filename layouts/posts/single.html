@@ -25,6 +25,8 @@
           {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
         </div>
       </header>
+    
+      {{ partial "toc.html" . }}
 
       <div>
         {{ if .Params.featured_image }}
@@ -32,7 +34,6 @@
         {{ end }}
         {{ .Content }}
       </div>
-
 
       <footer>
         {{ partial "posts/series.html" . }}

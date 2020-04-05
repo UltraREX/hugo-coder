@@ -1,8 +1,0 @@
-{{ if and (gt .WordCount .Site.Params.wordCount ) (eq (.Site.Params.toc | default false) true) }}
-<aside class="post-toc-absolute" id="post-toc">
-    <!-- <header>
-        <h2>{{ .Title }}</h2>
-    </header> -->
-    {{ .TableOfContents }}
-</aside>
-{{ end }}

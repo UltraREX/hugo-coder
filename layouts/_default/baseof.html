@@ -74,7 +74,7 @@
     {{ end }}
 
     {{ range .Site.Params.custom_js }}
-      <script src="{{ . | relURL }}"></script>
+      <script async src="{{ . | relURL }}"></script>
     {{ end }}
 
     {{ range .Site.Params.custom_scss }}
